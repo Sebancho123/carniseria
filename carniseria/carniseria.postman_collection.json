@@ -1,0 +1,703 @@
+{
+	"info": {
+		"_postman_id": "9fdc7051-3242-4bc2-a16c-dc4402eb52ff",
+		"name": "carniseria",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34695522"
+	},
+	"item": [
+		{
+			"name": "Comida",
+			"item": [
+				{
+					"name": "localhost:8080/comida/traerlos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/comida/traerlos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"comida",
+								"traerlos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/comida/crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo_comida\" : 13,\r\n    \"nombre\" : \"Barbudo\",\r\n    \"tipo\" : \"Pescado\",\r\n    \"precio\" : 11.000,\r\n    \"disponible\" : \"true\",\r\n    \"cantidad\" : 17\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/comida/crear",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"comida",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/comida/eliminar/1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/comida/eliminar/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"comida",
+								"eliminar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/comida/buscar/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/comida/buscar/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"comida",
+								"buscar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/comida/editar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo_comida\" : 1,\r\n    \"nombre\" : \"Barbudo\",\r\n    \"tipo\" : \"Pescado\",\r\n    \"precio\" : 11.000,\r\n    \"disponible\" : \"true\",\r\n    \"cantidad\" : 17\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/comida/editar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"comida",
+								"editar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Duenio",
+			"item": [
+				{
+					"name": "localhost:8080/duenio/traerlos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/duenio/traerlos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"duenio",
+								"traerlos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/duenio/crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : 1,\r\n    \"nombre\" : \"Sebastian\",\r\n    \"apellido\" : \"Daza\",\r\n    \"dinero\" : 0.0 \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/duenio/crear",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"duenio",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/duenio/eliminar/1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/duenio/eliminar/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"duenio",
+								"eliminar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/duenio/buscar/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/duenio/buscar/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"duenio",
+								"buscar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/duenio/editar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : 1,\r\n    \"nombre\" : \"Sebastian\",\r\n    \"apellido\" : \"Daza\",\r\n    \"dinero\" : 0.0 \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/duenio/editar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"duenio",
+								"editar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/duenio/pagar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/duenio/pagar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"duenio",
+								"pagar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Repartidor",
+			"item": [
+				{
+					"name": "localhost:8080/repartidor/traerlos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/repartidor/traerlos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"repartidor",
+								"traerlos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/repartidor/crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : 5,\r\n    \"nombre\" : \"Sofia\",\r\n    \"estado\" : \"disponible\",\r\n    \"localizacion_del_cliente\" : \"No se sabe aun\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/repartidor/crear",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"repartidor",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/repartidor/eliminar/1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/repartidor/eliminar/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"repartidor",
+								"eliminar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/repartidor/buscar/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/repartidor/buscar/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"repartidor",
+								"buscar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/repartidor/editar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : 5,\r\n    \"nombre\" : \"Sofia\",\r\n    \"estado\" : \"disponible\",\r\n    \"localizacion_del_cliente\" : \"No se sabe aun\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/repartidor/editar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"repartidor",
+								"editar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/repartidor/disponible",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/repartidor/disponible/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"repartidor",
+								"disponible",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "cajero",
+			"item": [
+				{
+					"name": "localhost:8080/cajero/traerlos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/cajero/traerlos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cajero",
+								"traerlos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/cajero/crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : 1,\r\n    \"nombre\" : \"Nasa\",\r\n    \"total_recaudado\" : 0.0,\r\n    \"sueldo_deCajero\" : 0.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/cajero/crear",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cajero",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/cajero/eliminar/1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/cajero/eliminar/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cajero",
+								"eliminar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/cajero/buscar/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/cajero/buscar/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cajero",
+								"buscar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/cajero/editar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : 1,\r\n    \"nombre\" : \"Nasa\",\r\n    \"total_recaudado\" : 100.0,\r\n    \"sueldo_deCajero\" : 1000.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/cajero/editar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cajero",
+								"editar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/cajero/depositar/jefe/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/cajero/depositar/jefe/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cajero",
+								"depositar",
+								"jefe",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "cliente",
+			"item": [
+				{
+					"name": "localhost:8080/cliente/traerlos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/cliente/traerlos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cliente",
+								"traerlos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/cliente/crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : 4,\r\n    \"nombre\" : \"feni\",\r\n    \"apellido\" : \"Ruiz\",\r\n    \"dirreccion\" : \"7707\",\r\n    \"sueldo\" : 300.000,\r\n    \"listaComida\" : [5,6]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/cliente/crear",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cliente",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/cliente/eliminar/252",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/cliente/eliminar/252",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cliente",
+								"eliminar",
+								"252"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/cliente/buscar/152",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/cliente/buscar/152",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cliente",
+								"buscar",
+								"152"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/cliente/editar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : 202,\r\n    \"nombre\" : \"Pepito\",\r\n    \"apellido\" : \"Perez\",\r\n    \"dirreccion\" : \"7707\",\r\n    \"sueldo\" : 300.000,\r\n    \"listaComida\" : [5,6]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/cliente/editar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cliente",
+								"editar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/cliente/cancelar/pedido/252",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/cliente/cancelar/pedido/252",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cliente",
+								"cancelar",
+								"pedido",
+								"252"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
